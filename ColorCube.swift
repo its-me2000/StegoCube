@@ -155,7 +155,7 @@ class ColorCube:CustomStringConvertible {
             
             for i:UInt8 in 0...7 {
                
-               countA = ((a & (1 << i)) >> i)
+               countA += ((a & (1 << i)) >> i)
                
            }
            return countA
